@@ -25,55 +25,55 @@
   ?>
   <section id="first-screen">
     <div class="container">
-      <div class="row">
+      <div class="row no-gutters">
         <div class="col-8 col-xl-3">
-          <img src="img/header-logo.svg" alt="CarFind подбор автомобилей">
+          <img src="img/logo.svg" alt="CarFind подбор автомобилей" width="223" height="44">
         </div>
         <div class="col-4 d-sm-none">
           <a href="tel:"><img src="img/phone.svg" alt="Телефон"></a>
         </div>
-        <div class="d-none d-md-block col-xl-5"></div>
-        <div class="d-none d-md-block col-xl-2">
+        <div class="d-none d-md-block col-xl-4"></div>
+        <div class="d-none d-md-block col-xl-3">
           <!-- Button trigger modal -->
-          <button type="button" class="text-uppercase btn-white-inverse" data-toggle="modal" data-target="#headerCallBack">
+          <button type="button" class="btn text-uppercase btn-white-inverse" data-toggle="modal" data-target="#headerCallBack">
             Заказать звонок
           </button>
         </div>
-        <div class="d-none d-md-block col-xl-2">
+        <div class="d-none d-md-block col-xl-2 text-right">
           <a class="phone" href="tel:<?=return_numbers_from_string($phone);?>"><?=$phone?></a>
           <br>
           <time>Работаем с 9:00 до 20:00</time>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-7">
           <h1>Подберем автомобиль<br>по вашим параметрам</h1>
           <p class="header-desc">с гарантией 60 дней</p>
           <p class="offer-free">Одна проверка бесплатно!</p>
           <p class="offer">Оставьте телефон, чтобы получить проверку</p>
 
-          <form action="mail.php" method="POST">
+          <form action="mail.php" method="POST" class="free-check-form">
             <div class="row">
-              <div class="col-12 col-md-6">
-                <label class="sr-only" for="inlineFormInputName2">Name</label>
+              <div class="col-12 col-md-5">
+                <label class="sr-only" for="inlineFormInputName2">Имя</label>
                 <input type="phone" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe" required="true">
               </div>
-              <div class="col-12 col-md-6">
-                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+              <div class="col-12 col-md-5">
+                <button type="submit" class="btn mb-2">Получить бесплатную проверку</button>
               </div>
             </div>
             <div class="row">
               <div class="col-12">
-                <div class="form-check mb-2 ml-sm-2">
+                <div class="form-check mb-2 ml-sm-2 mt-2">
                   <input class="form-check-input" type="checkbox" id="inlineFormCheck" required="true">
-                  <label class="form-check-label" for="inlineFormCheck">Даю согласие на обработку персональных данных в соответствии с <a href="privacy.html">"Политикой конфиденциальности"</a></label>
+                  <label class="form-check-label-privacy" for="inlineFormCheck">Даю согласие на обработку персональных данных в соответствии с <a href="privacy.html" class="privacy-check-link">"Политикой конфиденциальности"</a></label>
                 </div>
               </div>
             </div>
           </form>
 
         </div>
-        <div class="d-none d-md-block col-md-6">
+        <div class="d-none d-md-block col-md-5">
           <img src="img/" alt="">
         </div>
       </div>
