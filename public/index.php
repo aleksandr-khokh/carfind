@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Document</title>
-  <meta name="description" content="">
+  <title>Подбор автомобиля по параметрам</title>
+  <meta name="description" content="Автоэксперт подберет автомобиль по заданным параметрам с гарантией">
   <meta name="keywords" content="">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
