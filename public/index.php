@@ -100,7 +100,7 @@
             </div>
           </div>
           <div class="d-none d-md-block col-md-5">
-            <img src="img/">
+            <img class="card-img-top" src="https://via.placeholder.com/431x261" alt="Card image cap">
           </div>
         </div>
       </div>
@@ -119,7 +119,7 @@
             </div>
           </div>
           <div class="d-none d-md-block col-md-5">
-            <img src="img/">
+            <img class="card-img-top" src="https://via.placeholder.com/431x261" alt="Card image cap">
           </div>
         </div>
       </div>
@@ -138,7 +138,7 @@
             </div>
           </div>
           <div class="d-none d-md-block col-md-5">
-            <img src="img/">
+            <img class="card-img-top" src="https://via.placeholder.com/431x261" alt="Card image cap">
           </div>
         </div>
       </div>
@@ -216,7 +216,49 @@
       <!-- .row>.col-12.col-md-7>img^.col-12.col-md-5>h4+p.run+p.duration+p.start+p.total+p.torg+p.desc -->
     </div>
   </section>
+  <section id="free-check" class="bg-blue">
+    <div class="container">
+      <h4 class="text-center">Бесплатно проверим любой автомобиль по закрытым базам!</h4>
+      <div class="row">
+        <form action="mail.php" method="POST">
+          
+        </form>
+      </div>
+    </div>
+  </section>
 
+  <section id="map">
+    <div class="contacts">
+      <h4>Офис CarFind</h4>
+      <address>Ленинградский проспект, д.8, стр.1</address>
+      <time>Мы работаем с 9:00 до 20:00</time>
+      <a class="phone" href="tel:<?=return_numbers_from_string($phone);?>"><?=$phone?></a>
+      <a href="mailto:info@carfind.ru" class="email" rel="nofollow" target="_blank">info@carfind.ru</a>
+    </div>
+  </section>
+
+  <footer class="bg-blue">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-12 col-md-3">
+          
+        </div>
+        <div class="col-12 col-md-6 text-center">
+          <img src="img/logo.svg">
+        </div>
+        <div class="col-12 col-md-3">
+          <a class="phone" href="tel:<?=return_numbers_from_string($phone);?>"><?=$phone?></a>
+          <address>Ленинградский проспект, д.8, стр.1</address>
+          <time>Мы работаем с 9:00 до 20:00</time>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>&copy; 2018 - ООО "Кар Фаинд"</p>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- Modal -->
   <div class="modal fade" id="headerCallBack" tabindex="-1" role="dialog" aria-labelledby="headerCallBackTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
