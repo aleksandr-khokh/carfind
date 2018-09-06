@@ -55,8 +55,8 @@
           <form action="mail.php" method="POST" class="free-check-form">
             <div class="row">
               <div class="col-12 col-md-5">
-                <label class="sr-only" for="inlineFormInputName2">Имя</label>
-                <input type="phone" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe" required="true">
+                <label class="sr-only" for="inlineFormInputPhone">Телефон</label>
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control mb-2 mr-sm-2" id="inlineFormInputPhone" placeholder="Телефон" required="true">
               </div>
               <div class="col-12 col-md-5">
                 <button type="submit" class="btn mb-2">Получить бесплатную проверку</button>
@@ -91,9 +91,9 @@
                 </div>
                 <div class="col-12">
                   <ul>
-                    <li>Подбираем автомобильно по Вашим параметрам;</li>
-                    <li>Предоставляем подробный онлайн отчет;</li>
-                    <li>Можем оставить залог, чтобы закрепить за Вами автомобиль.</li>
+                    <li>Подбираем автомобильно <b>по Вашим параметрам</b>;</li>
+                    <li>Предоставляем подробный <b>онлайн отчет</b>;</li>
+                    <li><b>Можем оставить залог</b>, чтобы закрепить за Вами автомобиль.</li>
                   </ul>
                 </div>
               </div>
@@ -113,7 +113,7 @@
                   <h2>Никаких юридических рисков</h2>
                 </div>
                 <div class="col-12">
-                  <p>Гарантия юридической чистоты. Проверка по закрытым базам на ограничение регистрационных действий, угон, залог, дтп, оригинальность пробега, соответствие документам и пр.</p>
+                  <p>Гарантия юридической чистоты. Проверка по закрытым базам на <b>ограничение регистрационных действий, угон, залог, дтп, оригинальность пробега, соответствие документам</b> и пр.</p>
                 </div>
               </div>
             </div>
@@ -149,7 +149,7 @@
     <div class="container">
       <div class="row text-center">
         <div class="col-12 col-md-4">
-          <div class="card">
+          <div class="card small-card">
             <img class="card-img-top" src="https://via.placeholder.com/286x159" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Разовая выездная<br>проверка экспертом</h5>
@@ -166,13 +166,13 @@
               <h5 class="card-title">Комплексный подбор авто<br>по Вашим параметрам<br>с гарантией 60 дней</h5>
               <p class="card-text">Будем искать, пока не найдем<br>"тот самый автомобиль".</p>
               <p class="price">от 15 000 руб.</p>
-              <p>Независимо от количества<br>предложенных вариантов</p>
+              <p class="card-text">Независимо от количества<br>предложенных вариантов</p>
               <a href="#" class="btn btn-primary">Найти автомобиль</a>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-4">
-          <div class="card">
+          <div class="card small-card">
             <img class="card-img-top" src="https://via.placeholder.com/286x159" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Эксперт на день</h5>
@@ -199,41 +199,116 @@
   <section id="reviews">
     <div class="container">
       <h3 class="text-center">Отзывы реальных клиентов</h3>
-      <div class="row">
-        <div class="col-12 col-md-7">
-          <img src="https://via.placeholder.com/640x360" alt="">
+      <div class="review-item">
+        <div class="row">
+          <div class="col-12 col-md-7">
+            <img src="https://via.placeholder.com/640x360" alt="">
+          </div>
+          <div class="col-12 col-md-5">
+            <h4><b>Kia Optima</b> 2.4 л, 2016 г.</h4>
+            <p class="run">Пробег: <b>28 000 км</b></p>
+            <p class="duration">Подбор за 5 дней</p>
+            <p class="start">Начальная стоимость: <b>1 320 000 руб.</b></p>
+            <p class="total">Стоимость приобретения: 1 305 000 руб.</p>
+            <p class="torg">Стоимость обоснованного торга: <b>15 000 руб.</b></p>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. </p>
+          </div>
         </div>
-        <div class="col-12 col-md-5">
-          <h4>Kia Optima 2.4 л, 2016 г.</h4>
-          <p class="run">Пробег: 28 000 км</p>
-          <p class="duration">Подбор за 5 дней</p>
-          <p class="start">Начальная стоимость: 1 320 000 руб.</p>
-          <p class="total">Стоимость приобретения: 1 305 000 руб.</p>
-          <p class="torg">Стоимость обоснованного торга: 15 000 руб.</p>
-          <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. </p>
+      </div>
+      <div class="review-item">
+        <div class="row">
+          <div class="col-12 col-md-7">
+            <img src="https://via.placeholder.com/640x360" alt="">
+          </div>
+          <div class="col-12 col-md-5">
+            <h4><b>Kia Optima</b> 2.4 л, 2016 г.</h4>
+            <p class="run">Пробег: <b>28 000 км</b></p>
+            <p class="duration">Подбор за 5 дней</p>
+            <p class="start">Начальная стоимость: <b>1 320 000 руб.</b></p>
+            <p class="total">Стоимость приобретения: 1 305 000 руб.</p>
+            <p class="torg">Стоимость обоснованного торга: <b>15 000 руб.</b></p>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. </p>
+          </div>
+        </div>
+      </div>
+      <div class="review-item">
+        <div class="row">
+          <div class="col-12 col-md-7">
+            <img src="https://via.placeholder.com/640x360" alt="">
+          </div>
+          <div class="col-12 col-md-5">
+            <h4><b>Kia Optima</b> 2.4 л, 2016 г.</h4>
+            <p class="run">Пробег: <b>28 000 км</b></p>
+            <p class="duration">Подбор за 5 дней</p>
+            <p class="start">Начальная стоимость: <b>1 320 000 руб.</b></p>
+            <p class="total">Стоимость приобретения: 1 305 000 руб.</p>
+            <p class="torg">Стоимость обоснованного торга: <b>15 000 руб.</b></p>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. </p>
+          </div>
         </div>
       </div>
       <!-- .row>.col-12.col-md-7>img^.col-12.col-md-5>h4+p.run+p.duration+p.start+p.total+p.torg+p.desc -->
     </div>
   </section>
+
   <section id="free-check" class="bg-blue">
     <div class="container">
       <h4 class="text-center">Бесплатно проверим любой автомобиль по закрытым базам!</h4>
-      <div class="row">
-        <form action="mail.php" method="POST">
-          
-        </form>
+      <div class="row no-gutters">
+        <div class="col-12">
+
+          <form action="mail.php" method="POST">
+            <div class="form-row">
+
+              <div class="col-md-4 mb-3">
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Ссылка на Auto.ru или Avito" name="link" required="true">
+              </div>
+
+              <div class="col-md-2 mb-3">
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Имя" name="name" required="true">
+              </div>
+
+              <div class="col-md-2 mb-3">
+                <input type="tel" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="validationCustom03" placeholder="Телефон" name="name" required="true">
+              </div>
+
+              <div class="col-md-2 mb-3">
+                <button type="submit" class="btn mb-2">Получить бесплатную проверку</button>
+              </div>
+
+            </div><!-- form-row -->
+
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="form-check mb-2 ml-sm-2 mt-2">
+                  <input class="form-check-input" type="checkbox" id="inlineFormCheck" required="true">
+                  <label class="form-check-label-privacy" for="inlineFormCheck">Даю согласие на обработку персональных данных в соответствии с <a href="privacy.html" class="privacy-check-link">"Политикой конфиденциальности"</a></label>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="map">
-    <div class="contacts">
-      <h4>Офис CarFind</h4>
-      <address>Ленинградский проспект, д.8, стр.1</address>
-      <time>Мы работаем с 9:00 до 20:00</time>
-      <a class="phone" href="tel:<?=return_numbers_from_string($phone);?>"><?=$phone?></a>
-      <a href="mailto:info@carfind.ru" class="email" rel="nofollow" target="_blank">info@carfind.ru</a>
+  <section id="address-map">
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <div id="map"></div>
+    <div class="container container-for-map">
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <div class="contacts">
+            <h4>Офис CarFind</h4>
+            <address>Ленинградский проспект, д.8, стр.1</address>
+            <time>Мы работаем с 9:00 до 20:00</time>
+            <a class="phone" href="tel:<?=return_numbers_from_string($phone);?>"><?=$phone?></a> <br>
+            <a href="mailto:info@carfind.ru" class="email" rel="nofollow" target="_blank">info@carfind.su</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -241,7 +316,7 @@
     <div class="container">
       <div class="row no-gutters">
         <div class="col-12 col-md-3">
-          
+
         </div>
         <div class="col-12 col-md-6 text-center">
           <img src="img/logo.svg">
@@ -283,6 +358,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.0/jquery.fancybox.min.js"></script>
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,11 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&subset=cyrillic')
 
 $blue: #37B8EE
+$blue-hover: #228EC4
 $navy: #04429F
-$light-grey: #e9e9e9
+$blue-gradient: linear-gradient(to left, #04429f, #1174c1)
+$light-grey: #f9f9f9
+$black: #363636
 
 button
   cursor: pointer
+ul
+  padding-left: 20px
+b
+  font-weight: 700
+a:focus
+  outline: none
+input[type="text"],
+input[type="tel"]
+  border-radius: 16px
+  height: 35px
+  padding-left: 20px
+
+#map 
+  width: 100%
+  height: 400px
 
 .btn
   font-size: 14px
@@ -18,16 +36,24 @@ button
   border-color: $blue
   background: $blue
   color: white
+  &:hover
+    background: $blue-hover
+    border-color: $blue-hover
 
   &.btn-white-inverse
     border-color: white
     background: none
     color: white
     font-weight: normal
+    
+    &:hover
+      background: white
+      border-color: white
+      color: $navy
 
 body
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif
-  background: $light-grey
+  color: $black
 
 #first-screen
   background: #04429F
@@ -64,7 +90,7 @@ body
   .offer
     margin-top: 10px
     line-height: 1
-    font-weight: lighter
+    font-weight: 300
     font-size: 20px
 
   .free-check-form
@@ -80,11 +106,15 @@ body
     text-decoration: underline
 
 #advantages
+  background: $light-grey
   padding-top: 50px
+  font-weight: 300
+  padding-bottom: 70px
 
   h2
-    font-size: 32px
+    font-size: 28px
     margin-bottom: 26px
+    font-weight: bold
 
   .advantages-item
     background: white
@@ -96,6 +126,138 @@ body
       font-size: 18px
       line-height: 1.56
 
+    &:last-child
+      margin-bottom: 0
+
 #products
+  background: $light-grey
+  padding-bottom: 70px
+
   .card
     margin: auto
+    border: none
+    padding: 20px
+    box-shadow: 0 0 20px rgba(0,0,0,0.07)
+
+    &.small-card
+      background: none
+      margin-top: 20px
+      box-shadow: none
+  
+    .card-img-top
+      margin-bottom: 20px
+
+    .card-title
+      color: $navy
+      font-weight: bold
+      font-size: 22px
+      margin-bottom: 20px
+
+    .card-text
+      font-weight: 300
+      font-size: 18px
+      line-height: 1.6
+      margin-bottom: 20px
+
+    .price
+      font-weight: bold
+      font-size: 30px
+      color: $navy
+      margin-bottom: 15px
+
+#blue-offer
+  padding: 40px
+  background: $blue-gradient
+  p
+    color: white
+    margin-bottom: 0
+    font-size: 24px
+    font-weight: bold
+    letter-spacing: 1px
+
+#reviews
+  padding: 50px 0
+  font-weight: 300
+
+  .review-item
+    margin-bottom: 50px
+  
+  h3
+    font-weight: bold
+    color: $navy
+    font-size: 36px
+    margin-bottom: 30px
+
+  h4
+    font-size: 36px
+    color: $navy
+    margin-bottom: 20px
+
+  p
+    margin-bottom: 5px
+    font-size: 18px
+
+  .duration
+    margin-bottom: 10px
+
+  .total
+    font-weight: bold
+    color: $navy
+
+  .torg
+    margin-bottom: 10px
+
+  .desc
+    line-height: 1.6
+
+#free-check
+  padding: 40px 0
+  background: $blue-gradient
+  color: white
+
+  h4
+    font-weight: bold
+    font-size: 36px
+    margin-bottom: 40px
+
+
+
+#address-map
+  margin-bottom: -210px
+  
+  h4
+    color: $navy
+    font-size: 36px
+    font-weight: bold
+    margin-bottom: 20px
+
+  address
+    font-weight: bold
+    font-size: 18px
+    margin-bottom: 0
+
+  time
+    font-weight: 300
+    font-size: 18px
+    margin-bottom: 20px
+    display: block
+
+  .phone
+    color: $navy
+    font-size: 24px
+    font-weight: bold
+
+  .email
+    color: $black
+    font-weight: bold
+    font-size: 18px
+
+  .contacts
+    padding: 40px
+    background: white
+    box-shadow: 0 0 5px rgba(0,0,0,0.15)
+
+  .container-for-map
+    position: relative
+    z-index: 10
+    top: -350px
