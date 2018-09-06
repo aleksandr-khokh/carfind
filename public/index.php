@@ -15,13 +15,13 @@
 <body>
   <?php
     // Добавить здесь телефон, чтобы он обновился везде на странице
-    $phone = "+7 (495) 123-45-67";
+  $phone = "+7 (495) 123-45-67";
 
     // Используется для телефона, чтобы оставить только цифры в номере
-    function return_numbers_from_string( $string ){
-      $result = preg_replace("/[^+0-9]/", '', $string);
-      echo $result;
-    }
+  function return_numbers_from_string( $string ){
+    $result = preg_replace("/[^+0-9]/", '', $string);
+    echo $result;
+  }
   ?>
   <section id="first-screen">
     <div class="container">
@@ -77,6 +77,143 @@
           <img src="img/" alt="">
         </div>
       </div>
+    </div>
+  </section>
+  <section id="advantages">
+    <div class="container">
+      <div class="advantages-item">
+        <div class="row">
+          <div class="col-12 col-md-7">
+            <div class="advantages-desc">
+              <div class="row">
+                <div class="col-12">
+                  <h2>Экономим Ваше время</h2>
+                </div>
+                <div class="col-12">
+                  <ul>
+                    <li>Подбираем автомобильно по Вашим параметрам;</li>
+                    <li>Предоставляем подробный онлайн отчет;</li>
+                    <li>Можем оставить залог, чтобы закрепить за Вами автомобиль.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-md-block col-md-5">
+            <img src="img/">
+          </div>
+        </div>
+      </div>
+      <div class="advantages-item">
+        <div class="row">
+          <div class="col-12 col-md-7">
+            <div class="advantages-desc">
+              <div class="row">
+                <div class="col-12">
+                  <h2>Никаких юридических рисков</h2>
+                </div>
+                <div class="col-12">
+                  <p>Гарантия юридической чистоты. Проверка по закрытым базам на ограничение регистрационных действий, угон, залог, дтп, оригинальность пробега, соответствие документам и пр.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-md-block col-md-5">
+            <img src="img/">
+          </div>
+        </div>
+      </div>
+      <div class="advantages-item">
+        <div class="row">
+          <div class="col-12 col-md-7">
+            <div class="advantages-desc">
+              <div class="row">
+                <div class="col-12">
+                  <h2>Ваша полная осведомленность о техническом состоянии автомобиля</h2>
+                </div>
+                <div class="col-12">
+                  <p>Полная техническая диагностика. Проверка сертифицированным оборудованием более, чем по 100 параметрам с гарантией 60 дней на двигатель и трансмиссию.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-md-block col-md-5">
+            <img src="img/">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="https://via.placeholder.com/286x159" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Разовая выездная<br>проверка экспертом</h5>
+              <p class="card-text">Входит полная проверка юридической чистоты и техническая диагностика выбранного Вами автомобиля</p>
+              <p class="price">2 000 руб.</p>
+              <a href="#" class="btn btn-primary">Вызвать эксперта</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="https://via.placeholder.com/286x159" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Комплексный подбор авто<br>по Вашим параметрам<br>с гарантией 60 дней</h5>
+              <p class="card-text">Будем искать, пока не найдем<br>"тот самый автомобиль".</p>
+              <p class="price">от 15 000 руб.</p>
+              <p>Независимо от количества<br>предложенных вариантов</p>
+              <a href="#" class="btn btn-primary">Найти автомобиль</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="https://via.placeholder.com/286x159" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Эксперт на день</h5>
+              <p class="card-text">Передвижение на автомобиле эксперта. Возможно личное присутствие клиента при проверках и торге.</p>
+              <p class="price">5 000 руб.</p>
+              <a href="#" class="btn btn-primary">Вызвать эксперта</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blue-offer">
+    <div class="conteiner">
+      <div class="row">
+        <div class="col-12">
+          <p class="text-center">В 89% случаев наши услуги окупаются за счет обоснованного торга</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="container">
+      <h3 class="text-center">Отзывы реальных клиентов</h3>
+      <div class="row">
+        <div class="col-12 col-md-7">
+          <img src="https://via.placeholder.com/640x360" alt="">
+        </div>
+        <div class="col-12 col-md-5">
+          <h4>Kia Optima 2.4 л, 2016 г.</h4>
+          <p class="run">Пробег: 28 000 км</p>
+          <p class="duration">Подбор за 5 дней</p>
+          <p class="start">Начальная стоимость: 1 320 000 руб.</p>
+          <p class="total">Стоимость приобретения: 1 305 000 руб.</p>
+          <p class="torg">Стоимость обоснованного торга: 15 000 руб.</p>
+          <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. </p>
+        </div>
+      </div>
+      <!-- .row>.col-12.col-md-7>img^.col-12.col-md-5>h4+p.run+p.duration+p.start+p.total+p.torg+p.desc -->
     </div>
   </section>
 
