@@ -3,7 +3,7 @@
 $blue: #37B8EE
 $blue-hover: #228EC4
 $navy: #04429F
-$blue-gradient: linear-gradient(to left, #04429f, #1174c1)
+$blue-gradient: linear-gradient(to left, $navy, #1174c1)
 $light-grey: #f9f9f9
 $black: #363636
 
@@ -20,6 +20,8 @@ input[type="tel"]
   border-radius: 16px
   height: 35px
   padding-left: 20px
+label
+  cursor: pointer
 
 #map 
   width: 100%
@@ -50,6 +52,15 @@ input[type="tel"]
       background: white
       border-color: white
       color: $navy
+
+.bg-blue
+  background: $blue-gradient
+
+.form-check
+  cursor: pointer
+
+.form-result
+  display: none
 
 body
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif
@@ -99,11 +110,15 @@ body
   .form-check-label-privacy
     font-weight: lighter
     font-size: 12px
-    cursor: pointer
 
-  .privacy-check-link
+.privacy-check-link
+  color: white
+  text-decoration: underline
+  &:hover
     color: white
-    text-decoration: underline
+    text-decoration: none
+  &.modal-check
+    color: $navy
 
 #advantages
   background: $light-grey
@@ -220,10 +235,8 @@ body
     font-size: 36px
     margin-bottom: 40px
 
-
-
 #address-map
-  margin-bottom: -210px
+  height: 400px
   
   h4
     color: $navy
@@ -261,3 +274,95 @@ body
     position: relative
     z-index: 10
     top: -350px
+
+footer
+  padding-top: 50px
+  color: white
+  
+  .phone
+    color: white
+
+  address
+    margin-bottom: 0
+
+  .social-icons
+    list-style: none
+    
+    li
+      display: inline-block
+    a
+      display: block
+      width: 30px
+      height: 30px
+      background: url(img/social-icons.svg) no-repeat
+      margin-right: 10px
+    .vk
+      background-position: 0 0
+      &:hover
+        background-position: 0 -33px
+    .youtube
+      background-position: -45px 0
+      &:hover
+        background-position: -45px -33px
+    .fb
+      background-position: -83px 0
+      &:hover
+        background-position: -83px -33px
+    .instagram
+      background-position: -120px 0
+      &:hover
+        background-position: -120px -33px
+
+// modal form
+.modal
+  .close
+    font-size: 40px
+    color: #C0CEDD
+    padding: 0.5rem
+    margin: -0.5rem -0rem -1rem auto;
+    &:not(:disabled):not(.disabled):hover
+      color: #90A9BF
+
+  .modal-content
+    min-height: 200px
+
+  .modal-header
+    border-bottom: none
+    justify-content: center
+    align-items: center
+    padding: 0
+
+  .modal-body
+    color: $navy
+    padding: 0 24px 
+
+    .modal-title
+      width: 100%
+      font-size: 24px
+      font-weight: bold
+      color: $navy
+      line-height: 1.2
+      margin-bottom: 24px
+      margin-top: 10px
+    
+    .form-check
+      font-size: 12px
+
+  .modal-footer
+    border-top: none
+    justify-content: center
+    padding-bottom: 45px
+
+  .form-result
+    color: $navy
+    padding-top: 30px
+    h5
+      font-size: 24px
+      font-weight: bold
+
+    .desc
+      font-size: 14px
+
+//fancybox
+.fancybox-slide--iframe .fancybox-content 
+    max-width: 1300px

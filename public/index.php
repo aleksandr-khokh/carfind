@@ -34,10 +34,7 @@
         </div>
         <div class="d-none d-md-block col-xl-4"></div>
         <div class="d-none d-md-block col-xl-3">
-          <!-- Button trigger modal -->
-          <button type="button" class="btn text-uppercase btn-white-inverse" data-toggle="modal" data-target="#headerCallBack">
-            Заказать звонок
-          </button>
+          <button type="button" class="btn text-uppercase btn-white-inverse" data-toggle="modal" data-target="#callBack" data-title="Заказать звонок">Заказать звонок</button>
         </div>
         <div class="d-none d-md-block col-xl-2 text-right">
           <a class="phone" href="tel:<?=return_numbers_from_string($phone);?>"><?=$phone?></a>
@@ -52,11 +49,11 @@
           <p class="offer-free">Одна проверка бесплатно!</p>
           <p class="offer">Оставьте телефон, чтобы получить проверку</p>
 
-          <form action="mail.php" method="POST" class="free-check-form">
+          <form action="mail.php" method="POST" class="free-check-form form-send-disable call-back-form">
             <div class="row">
               <div class="col-12 col-md-5">
                 <label class="sr-only" for="inlineFormInputPhone">Телефон</label>
-                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control mb-2 mr-sm-2" id="inlineFormInputPhone" placeholder="Телефон" required="true">
+                <input type="tel" class="form-control mb-2 mr-sm-2" id="inlineFormInputPhone" name="phone" placeholder="Телефон" required="true">
               </div>
               <div class="col-12 col-md-5">
                 <button type="submit" class="btn mb-2">Получить бесплатную проверку</button>
@@ -66,11 +63,17 @@
               <div class="col-12">
                 <div class="form-check mb-2 ml-sm-2 mt-2">
                   <input class="form-check-input" type="checkbox" id="inlineFormCheck" required="true">
-                  <label class="form-check-label-privacy" for="inlineFormCheck">Даю согласие на обработку персональных данных в соответствии с <a href="privacy.html" class="privacy-check-link">"Политикой конфиденциальности"</a></label>
+                  <label class="form-check-label-privacy" for="inlineFormCheck">Даю согласие на обработку персональных данных в соответствии с <a data-fancybox data-type="iframe" data-src="privacy.html" href="javascript:;" class="privacy-check-link">"Политикой конфиденциальности"</a></label>
                 </div>
               </div>
             </div>
+            <input type="hidden" name="hidden" value="1z2s3w">
           </form>
+
+          <div class="form-result">
+            <h2>Спасибо!</h2>
+            <p class="desc">Мы свяжемся с Вами в ближайшее время</p>
+          </div>
 
         </div>
         <div class="d-none d-md-block col-md-5">
@@ -155,7 +158,7 @@
               <h5 class="card-title">Разовая выездная<br>проверка экспертом</h5>
               <p class="card-text">Входит полная проверка юридической чистоты и техническая диагностика выбранного Вами автомобиля</p>
               <p class="price">2 000 руб.</p>
-              <a href="#" class="btn btn-primary">Вызвать эксперта</a>
+              <button type="button" class="btn text-uppercase" data-toggle="modal" data-target="#callBack" data-title="Вызвать эксперта">Вызвать эксперта</button>
             </div>
           </div>
         </div>
@@ -167,7 +170,7 @@
               <p class="card-text">Будем искать, пока не найдем<br>"тот самый автомобиль".</p>
               <p class="price">от 15 000 руб.</p>
               <p class="card-text">Независимо от количества<br>предложенных вариантов</p>
-              <a href="#" class="btn btn-primary">Найти автомобиль</a>
+              <button type="button" class="btn text-uppercase" data-toggle="modal" data-target="#callBack" data-title="Найти автомобиль">Найти автомобиль</button>
             </div>
           </div>
         </div>
@@ -178,7 +181,7 @@
               <h5 class="card-title">Эксперт на день</h5>
               <p class="card-text">Передвижение на автомобиле эксперта. Возможно личное присутствие клиента при проверках и торге.</p>
               <p class="price">5 000 руб.</p>
-              <a href="#" class="btn btn-primary">Вызвать эксперта</a>
+              <button type="button" class="btn text-uppercase" data-toggle="modal" data-target="#callBack" data-title="Вызвать эксперта">Вызвать эксперта</button>
             </div>
           </div>
         </div>
@@ -257,7 +260,7 @@
       <div class="row no-gutters">
         <div class="col-12">
 
-          <form action="mail.php" method="POST">
+          <form action="mail.php" method="POST" class="form-send-disable">
             <div class="form-row">
 
               <div class="col-md-4 mb-3">
@@ -269,7 +272,7 @@
               </div>
 
               <div class="col-md-2 mb-3">
-                <input type="tel" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="validationCustom03" placeholder="Телефон" name="name" required="true">
+                <input type="tel" class="form-control" id="validationCustom03" placeholder="Телефон" name="name" required="true">
               </div>
 
               <div class="col-md-2 mb-3">
@@ -281,13 +284,19 @@
             <div class="row">
               <div class="col-12 text-center">
                 <div class="form-check mb-2 ml-sm-2 mt-2">
-                  <input class="form-check-input" type="checkbox" id="inlineFormCheck" required="true">
-                  <label class="form-check-label-privacy" for="inlineFormCheck">Даю согласие на обработку персональных данных в соответствии с <a href="privacy.html" class="privacy-check-link">"Политикой конфиденциальности"</a></label>
+                  <input class="form-check-input" type="checkbox" id="inlineFormCheckBottom" required="true">
+                  <label class="form-check-label-privacy" for="inlineFormCheckBottom">Даю согласие на обработку персональных данных в соответствии с <a href="privacy.html" class="privacy-check-link">"Политикой конфиденциальности"</a></label>
                 </div>
               </div>
             </div>
-
+            <input type="hidden" name="hidden" value="1z2s3w">
           </form>
+
+          <div class="form-result">
+            <h2>Спасибо!</h2>
+            <p class="desc">Мы свяжемся с Вами в ближайшее время</p>
+          </div>
+
         </div>
       </div>
     </div>
@@ -316,13 +325,18 @@
     <div class="container">
       <div class="row no-gutters">
         <div class="col-12 col-md-3">
-
+          <ul class="social-icons">
+            <li><a class="vk" href="" target="_blank" rel="nofollow"></a></li>
+            <li><a class="youtube" href="" target="_blank" rel="nofollow"></a></li>
+            <li><a class="fb" href="" target="_blank" rel="nofollow"></a></li>
+            <li><a class="instagram" href="" target="_blank" rel="nofollow"></a></li>
+          </ul>
         </div>
         <div class="col-12 col-md-6 text-center">
           <img src="img/logo.svg">
         </div>
-        <div class="col-12 col-md-3">
-          <a class="phone" href="tel:<?=return_numbers_from_string($phone);?>"><?=$phone?></a>
+        <div class="col-12 col-md-3 text-right">
+          <a class="phone" rel="nofollow" href="tel:<?=return_numbers_from_string($phone);?>"><?=$phone?></a>
           <address>Ленинградский проспект, д.8, стр.1</address>
           <time>Мы работаем с 9:00 до 20:00</time>
         </div>
@@ -334,22 +348,53 @@
       </div>
     </div>
   </footer>
+
   <!-- Modal -->
-  <div class="modal fade" id="headerCallBack" tabindex="-1" role="dialog" aria-labelledby="headerCallBackTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal fade" id="callBack" tabindex="-1" role="dialog" aria-labelledby="callBackTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="headerCallBackTitle">Обратный звонок</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+        <form action="mail.php" method="POST">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h5 class="modal-title text-center" id="callBackTitle">Заказать проверку автомобиля</h5>
+
+            <div class="form-group">
+              <label for="formGroupExampleInput">Ваше имя</label>
+              <input type="text" class="form-control" id="modalFormInputName" placeholder="Иван Иванов" required="tru">
+            </div>
+
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Телефон</label>
+              <input type="tel" class="form-control" id="modalFormInputPhone" placeholder="+7 (123) 456-78-91" required="true">
+            </div>
+
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" required="true">
+                <label class="form-check-label" for="gridCheck">
+                  Принимаю <a href="privacy.html" class="privacy-check-link modal-check" target="_blank">политику конфиденциальности</a>
+                </label>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn">Отправить</button>
+          </div>
+          <input type="hidden" name="hidden" value="1z2s3w">
+        </form>
+
+        <!-- result -->
+        <div class="form-result red">
+          <h5 class="text-center">Спасибо!</h5>
+          
+          <p class="desc text-center">Мы свяжемся с Вами<br>в ближайшее время.</p>
         </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Отправить</button>
-        </div>
+
       </div>
     </div>
   </div>
