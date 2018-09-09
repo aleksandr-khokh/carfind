@@ -56,7 +56,7 @@
                 <input type="tel" class="form-control mb-2 mr-sm-2" id="inlineFormInputPhone" name="phone" placeholder="Телефон" required="true">
               </div>
               <div class="col-12 col-md-5">
-                <button type="submit" class="btn mb-2">Получить бесплатную проверку</button>
+                <button type="submit" class="btn mb-2" data-title="Заказать звонок">Получить бесплатную проверку</button>
               </div>
             </div>
             <div class="row">
@@ -158,7 +158,7 @@
               <h5 class="card-title">Разовая выездная<br>проверка экспертом</h5>
               <p class="card-text">Входит полная проверка юридической чистоты и техническая диагностика выбранного Вами автомобиля</p>
               <p class="price">2 000 руб.</p>
-              <button type="button" class="btn text-uppercase" data-toggle="modal" data-target="#callBack" data-title="Вызвать эксперта">Вызвать эксперта</button>
+              <button type="button" class="btn text-uppercase" data-toggle="modal" data-target="#callBack" data-title="Вызвать эксперта" data-order="1">Вызвать эксперта</button>
             </div>
           </div>
         </div>
@@ -170,7 +170,7 @@
               <p class="card-text">Будем искать, пока не найдем<br>"тот самый автомобиль".</p>
               <p class="price">от 15 000 руб.</p>
               <p class="card-text">Независимо от количества<br>предложенных вариантов</p>
-              <button type="button" class="btn text-uppercase" data-toggle="modal" data-target="#callBack" data-title="Найти автомобиль">Найти автомобиль</button>
+              <button type="button" class="btn text-uppercase" data-toggle="modal" data-target="#callBack" data-title="Найти автомобиль" data-order="2">Найти автомобиль</button>
             </div>
           </div>
         </div>
@@ -181,7 +181,7 @@
               <h5 class="card-title">Эксперт на день</h5>
               <p class="card-text">Передвижение на автомобиле эксперта. Возможно личное присутствие клиента при проверках и торге.</p>
               <p class="price">5 000 руб.</p>
-              <button type="button" class="btn text-uppercase" data-toggle="modal" data-target="#callBack" data-title="Вызвать эксперта">Вызвать эксперта</button>
+              <button type="button" class="btn text-uppercase" data-toggle="modal" data-target="#callBack" data-title="Вызвать эксперта" data-order="3">Вызвать эксперта</button>
             </div>
           </div>
         </div>
@@ -260,7 +260,7 @@
       <div class="row no-gutters">
         <div class="col-12">
 
-          <form action="mail.php" method="POST" class="form-send-disable">
+          <form action="mail.php" method="POST" class="form-send-disable call-back-form">
             <div class="form-row">
 
               <div class="col-md-4 mb-3">
@@ -272,11 +272,11 @@
               </div>
 
               <div class="col-md-2 mb-3">
-                <input type="tel" class="form-control" id="validationCustom03" placeholder="Телефон" name="name" required="true">
+                <input type="tel" class="form-control" id="validationCustom03" placeholder="Телефон" name="phone" required="true">
               </div>
 
               <div class="col-md-2 mb-3">
-                <button type="submit" class="btn mb-2">Получить бесплатную проверку</button>
+                <button type="submit" class="btn mb-2" data-title="Проверить автомобиль по ссылке">Получить бесплатную проверку</button>
               </div>
 
             </div><!-- form-row -->
@@ -353,7 +353,7 @@
   <div class="modal fade" id="callBack" tabindex="-1" role="dialog" aria-labelledby="callBackTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
       <div class="modal-content">
-        <form action="mail.php" method="POST">
+        <form action="mail.php" method="POST" class="call-back-form">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -364,12 +364,12 @@
 
             <div class="form-group">
               <label for="formGroupExampleInput">Ваше имя</label>
-              <input type="text" class="form-control" id="modalFormInputName" placeholder="Иван Иванов" required="tru">
+              <input type="text" class="form-control" id="modalFormInputName" name="name" placeholder="Иван Иванов" required="tru">
             </div>
 
             <div class="form-group">
               <label for="formGroupExampleInput2">Телефон</label>
-              <input type="tel" class="form-control" id="modalFormInputPhone" placeholder="+7 (123) 456-78-91" required="true">
+              <input type="tel" class="form-control" id="modalFormInputPhone" name="phone" placeholder="+7 (123) 456-78-91" required="true">
             </div>
 
             <div class="form-group">
@@ -383,7 +383,7 @@
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn">Отправить</button>
+            <button type="submit" class="btn">Отправить</button>
           </div>
           <input type="hidden" name="hidden" value="1z2s3w">
         </form>

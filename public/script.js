@@ -4,18 +4,19 @@
     // Подгрузка заголовков в modal form
     $('[data-title]').click(function(){
       header = $(this).attr('data-title');
-      if (header) {
-        $('#callBackTitle').html(header);
-      }
-      console.log(header);
+      if (header) $('#callBackTitle').html(header);
+
+      order = $(this).attr('data-order');
     });
 
     // Отправка формы
     $('.call-back-form').submit(function(e){
       e.preventDefault();
+
       var m_method=$(this).attr('method');
       var m_action=$(this).attr('action');
       var m_data=$(this).serialize();
+      m_data += '&order=' + order;
       $.ajax({
         type: m_method,
         url: m_action,
@@ -25,6 +26,7 @@
           $('.call-back-form').css("display", "none");
           $('.form-result').css("display", "block");
           // yaCounter00000000.reachGoal('xxxxx');
+          // console.log(result);
         }
       });
     });
