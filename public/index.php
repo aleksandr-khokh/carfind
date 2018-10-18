@@ -14,10 +14,10 @@
 </head>
 <body>
   <?php
-    // Добавить здесь телефон, чтобы он обновился везде на странице
+  // Добавить здесь телефон, чтобы он обновился везде на странице
   $phone = "+7 (495) 123-45-67";
 
-    // Используется для телефона, чтобы оставить только цифры в номере
+  // Используется для телефона, чтобы оставить только цифры в номере
   function return_numbers_from_string( $string ){
     $result = preg_replace("/[^+0-9]/", '', $string);
     echo $result;
@@ -27,10 +27,12 @@
     <div class="container">
       <div class="row no-gutters">
         <div class="col-8 col-xl-3">
-          <img src="img/logo.svg" alt="CarFind подбор автомобилей" width="223" height="44">
+          <img class="logo" src="img/logo.svg" alt="CarFind подбор автомобилей">
         </div>
-        <div class="col-4 d-sm-none">
-          <a href="tel:"><img src="img/phone.svg" alt="Телефон"></a>
+        <div class="col-4 d-sm-none text-right">
+          <a href="tel:<?=return_numbers_from_string($phone);?>" target="_blank" rel="nofollow">
+            <img src="img/phone.svg" alt="Телефон">
+          </a>
         </div>
         <div class="d-none d-md-block col-xl-4"></div>
         <div class="d-none d-md-block col-xl-3">
@@ -44,8 +46,8 @@
       </div>
       <div class="row no-gutters">
         <div class="col-12 col-md-6">
-          <h1>Подберем автомобиль<br>по вашим параметрам</h1>
-          <p class="header-desc">с гарантией 60 дней</p>
+          <h1 class="text-center text-sm-left">Подберем автомобиль<br>по вашим параметрам</h1>
+          <p class="header-desc text-center text-sm-left">с гарантией 60 дней</p>
           <p class="offer-free">Одна проверка бесплатно!</p>
           <p class="offer">Оставьте телефон, чтобы получить проверку</p>
 
@@ -56,7 +58,7 @@
                 <input type="tel" class="form-control mb-2 mr-sm-2" id="inlineFormInputPhone" name="phone" placeholder="Телефон" required="true">
               </div>
               <div class="col-12 col-md-5">
-                <button type="submit" class="btn mb-2" data-title="Заказать звонок">Получить бесплатную проверку</button>
+                <button type="submit" class="btn mb-2 offer_free_button_submit" data-title="Заказать звонок">Получить бесплатную проверку</button>
               </div>
             </div>
             <div class="row">
@@ -90,9 +92,11 @@
         <div class="row">
           <div class="col-12 col-md-7">
             <div class="advantages-desc">
-              <div class="row">
+              <div class="row no-gutters">
                 <div class="col-12">
-                  <h2>Экономим Ваше время</h2>
+                  <div class="header-wrapper time d-flex justify-content-center align-items-center">
+                    <h2 class="text-center text-sm-left">Экономим <br class="d-block d-sm-none">Ваше время</h2>
+                  </div>
                 </div>
                 <div class="col-12">
                   <ul>
@@ -113,9 +117,11 @@
         <div class="row">
           <div class="col-12 col-md-7">
             <div class="advantages-desc">
-              <div class="row">
+              <div class="row no-gutters">
                 <div class="col-12">
-                  <h2>Никаких юридических рисков</h2>
+                  <div class="header-wrapper legal d-flex justify-content-center align-items-center">
+                    <h2 class="text-center text-sm-left">Никаких юридических рисков</h2>
+                  </div>
                 </div>
                 <div class="col-12">
                   <p>Гарантия юридической чистоты. Проверка по закрытым базам на <b>ограничение регистрационных действий, угон, залог, дтп, оригинальность пробега, соответствие документам</b> и пр.</p>
@@ -132,9 +138,11 @@
         <div class="row">
           <div class="col-12 col-md-7">
             <div class="advantages-desc">
-              <div class="row">
+              <div class="row no-gutters">
                 <div class="col-12">
-                  <h2>Ваша полная осведомленность о техническом состоянии автомобиля</h2>
+                  <div class="header-wrapper check d-flex justify-content-center align-items-center">
+                    <h2 class="text-center text-sm-left">Ваша полная осведомленность о техническом состоянии автомобиля</h2>
+                  </div>
                 </div>
                 <div class="col-12">
                   <p>Полная техническая диагностика. Проверка сертифицированным оборудованием более, чем по 100 параметрам с гарантией 60 дней на двигатель и трансмиссию.</p>

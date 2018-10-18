@@ -1,0 +1,38 @@
+$blue: #37B8EE
+$blue-hover: #228EC4
+$navy: #04429F
+$blue-gradient: linear-gradient(to left, $navy, #1174c1)
+$light-grey: #f9f9f9
+$black: #363636
+
+button,
+label,
+.form-check
+  cursor: pointer
+
+.btn
+  color: white
+  font-size: 14px
+  font-weight: bold
+  text-transform: uppercase
+  border-radius: 20px
+  padding: 7px 40px
+  border: 1px solid $blue
+  background: $blue
+  &:hover
+    background: $blue-hover
+    border-color: $blue-hover
+
+  &.btn-white-inverse
+    border-color: white
+    background: none
+    color: white
+    font-weight: normal
+
+    &:hover
+      background: white
+      border-color: white
+      color: $navy
+
+.bg-blue
+  background: $blue-gradient

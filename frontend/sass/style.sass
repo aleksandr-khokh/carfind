@@ -1,14 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&subset=cyrillic')
+@import "variables"
 
-$blue: #37B8EE
-$blue-hover: #228EC4
-$navy: #04429F
-$blue-gradient: linear-gradient(to left, $navy, #1174c1)
-$light-grey: #f9f9f9
-$black: #363636
 
-button
-  cursor: pointer
 ul
   padding-left: 20px
 b
@@ -20,44 +13,10 @@ input[type="tel"]
   border-radius: 16px
   height: 35px
   padding-left: 20px
-label
-  cursor: pointer
 
 #map 
   width: 100%
   height: 400px
-
-.btn
-  font-size: 14px
-  font-weight: bold
-  text-transform: uppercase
-  border-radius: 20px
-  padding: 7px 40px
-  border-width: 1px
-  border-style: solid
-  border-color: $blue
-  background: $blue
-  color: white
-  &:hover
-    background: $blue-hover
-    border-color: $blue-hover
-
-  &.btn-white-inverse
-    border-color: white
-    background: none
-    color: white
-    font-weight: normal
-    
-    &:hover
-      background: white
-      border-color: white
-      color: $navy
-
-.bg-blue
-  background: $blue-gradient
-
-.form-check
-  cursor: pointer
 
 .form-result
   display: none
@@ -72,6 +31,9 @@ body
   padding-bottom: 70px
   color: white
 
+  .logo
+    width: 100%
+
   .phone
     color: white
     font-weight: bold
@@ -85,11 +47,15 @@ body
     font-weight: bold
     font-size: 50px
     margin-top: 70px
+    @media(max-width: 576px)
+      font-size: 36px
 
   .header-desc
     margin-top: 28px
     font-weight: bold
     font-size: 24px
+    @media(max-width: 576px)
+      font-size: 20px
 
   .offer-free
     margin-top: 28px
@@ -97,12 +63,17 @@ body
     font-size: 24px
     line-height: 1
     margin-bottom: 0
+    @media(max-width: 576px)
+      font-size: 20px
+      margin-bottom: 20px
 
   .offer
     margin-top: 10px
     line-height: 1
     font-weight: 300
     font-size: 20px
+    @media(max-width: 576px)
+      font-size: 20px
 
   .free-check-form
     margin-top: 28px
@@ -113,6 +84,11 @@ body
 
   &-car
     margin-top: 130px
+
+  .offer_free_button_submit
+    @media(max-width: 576px)
+      padding: 7px 20px
+      width: 100%
 
 .privacy-check-link
   color: white
@@ -128,11 +104,29 @@ body
   padding-top: 50px
   font-weight: 300
   padding-bottom: 70px
+  @media(max-width: 576px)
+    background: white
+    padding-top: 0
 
-  h2
-    font-size: 28px
-    margin-bottom: 26px
-    font-weight: bold
+  .header-wrapper
+    height: auto
+    width: 100%
+    @media(max-width: 576px)
+      height: 200px
+      color: white
+      &.time
+        background: url(img/find.jpg) no-repeat
+        -webkit-background-size: contain
+        background-size: contain
+
+    h2
+      font-size: 28px
+      margin-bottom: 26px
+      font-weight: bold
+      @media(max-width: 576px)
+        padding: 20px
+        margin-bottom: 0
+
 
   .advantages-item
     background: white
@@ -143,6 +137,10 @@ body
       padding: 50px
       font-size: 18px
       line-height: 1.56
+      @media(max-width: 576px)
+        padding: 0
+        margin-left: -15px
+        margin-right: -15px
 
     &:last-child
       margin-bottom: 0
