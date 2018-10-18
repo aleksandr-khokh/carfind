@@ -23,7 +23,7 @@
     echo $result;
   }
   ?>
-  <section id="first-screen">
+  <section class="first-screen">
     <div class="container">
       <div class="row no-gutters">
         <div class="col-8 col-xl-3">
@@ -42,8 +42,8 @@
           <time>Работаем с 9:00 до 20:00</time>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 col-md-7">
+      <div class="row no-gutters">
+        <div class="col-12 col-md-6">
           <h1>Подберем автомобиль<br>по вашим параметрам</h1>
           <p class="header-desc">с гарантией 60 дней</p>
           <p class="offer-free">Одна проверка бесплатно!</p>
@@ -76,8 +76,10 @@
           </div>
 
         </div>
-        <div class="d-none d-md-block col-md-5">
-          <img src="img/" alt="">
+        <div class="d-none d-md-block col-md-6">
+          <div class="first-screen-car">
+            <img src="img/car.png" alt="Подбор автомобилей" width="100%">
+          </div>
         </div>
       </div>
     </div>
@@ -103,7 +105,7 @@
             </div>
           </div>
           <div class="d-none d-md-block col-md-5">
-            <img class="card-img-top" src="https://via.placeholder.com/431x261" alt="Card image cap">
+            <img class="card-img-top" src="img/find.jpg" alt="Card image cap">
           </div>
         </div>
       </div>
@@ -122,7 +124,7 @@
             </div>
           </div>
           <div class="d-none d-md-block col-md-5">
-            <img class="card-img-top" src="https://via.placeholder.com/431x261" alt="Card image cap">
+            <img class="card-img-top" src="img/security.jpg" alt="Card image cap">
           </div>
         </div>
       </div>
@@ -141,48 +143,7 @@
             </div>
           </div>
           <div class="d-none d-md-block col-md-5">
-            <img class="card-img-top" src="https://via.placeholder.com/431x261" alt="Card image cap">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="products">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-12 col-md-4">
-          <div class="card small-card">
-            <img class="card-img-top" src="https://via.placeholder.com/286x159" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Разовая выездная<br>проверка экспертом</h5>
-              <p class="card-text">Входит полная проверка юридической чистоты и техническая диагностика выбранного Вами автомобиля</p>
-              <p class="price">2 000 руб.</p>
-              <button type="button" class="btn text-uppercase" data-toggle="modal" data-target="#callBack" data-title="Вызвать эксперта" data-order="1">Вызвать эксперта</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="https://via.placeholder.com/286x159" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Комплексный подбор авто<br>по Вашим параметрам<br>с гарантией 60 дней</h5>
-              <p class="card-text">Будем искать, пока не найдем<br>"тот самый автомобиль".</p>
-              <p class="price">от 15 000 руб.</p>
-              <p class="card-text">Независимо от количества<br>предложенных вариантов</p>
-              <button type="button" class="btn text-uppercase" data-toggle="modal" data-target="#callBack" data-title="Найти автомобиль" data-order="2">Найти автомобиль</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="card small-card">
-            <img class="card-img-top" src="https://via.placeholder.com/286x159" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Эксперт на день</h5>
-              <p class="card-text">Передвижение на автомобиле эксперта. Возможно личное присутствие клиента при проверках и торге.</p>
-              <p class="price">5 000 руб.</p>
-              <button type="button" class="btn text-uppercase" data-toggle="modal" data-target="#callBack" data-title="Вызвать эксперта" data-order="3">Вызвать эксперта</button>
-            </div>
+            <img class="card-img-top" src="img/checkup.jpg" alt="Card image cap">
           </div>
         </div>
       </div>
@@ -199,7 +160,48 @@
     </div>
   </section>
 
-  <section id="reviews">
+  <section id="products">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12 col-md-4">
+          <div class="card small-card d-block text-center">
+            <img class="my-4" src="img/one_checkup.svg" alt="Card image cap" width="100">
+            <div class="card-body">
+              <h5 class="card-title">Разовая выездная<br>проверка экспертом</h5>
+              <p class="card-text">Входит полная проверка юридической чистоты и техническая диагностика выбранного Вами автомобиля</p>
+              <p class="price">2 000 руб.</p>
+              <button type="button" class="btn text-uppercase" data-toggle="modal" data-target="#callBack" data-title="Вызвать эксперта" data-order="1">Вызвать эксперта</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card d-block text-center">
+            <img class="d-inline-block my-4" src="img/total.svg" alt="Card image cap" width="100">
+            <div class="card-body">
+              <h5 class="card-title">Комплексный подбор авто<br>по Вашим параметрам<br>с гарантией 60 дней</h5>
+              <p class="card-text">Будем искать, пока не найдем<br>"тот самый автомобиль".</p>
+              <p class="price">от 15 000 руб.</p>
+              <p class="card-text">Независимо от количества<br>предложенных вариантов</p>
+              <button type="button" class="btn text-uppercase" data-toggle="modal" data-target="#callBack" data-title="Найти автомобиль" data-order="2">Найти автомобиль</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card small-card d-block text-center">
+            <img class="d-inline-block my-4" src="img/one_day.svg" alt="Card image cap" width="95">
+            <div class="card-body">
+              <h5 class="card-title">Эксперт на день</h5>
+              <p class="card-text">Передвижение на автомобиле эксперта. Возможно личное присутствие клиента при проверках и торге.</p>
+              <p class="price">5 000 руб.</p>
+              <button type="button" class="btn text-uppercase" data-toggle="modal" data-target="#callBack" data-title="Вызвать эксперта" data-order="3">Вызвать эксперта</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section id="reviews">
     <div class="container">
       <h3 class="text-center">Отзывы реальных клиентов</h3>
       <div class="review-item">
@@ -250,9 +252,8 @@
           </div>
         </div>
       </div>
-      <!-- .row>.col-12.col-md-7>img^.col-12.col-md-5>h4+p.run+p.duration+p.start+p.total+p.torg+p.desc -->
     </div>
-  </section>
+  </section -->
 
   <section id="free-check" class="bg-blue">
     <div class="container">
