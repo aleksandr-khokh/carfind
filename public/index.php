@@ -55,10 +55,10 @@
             <div class="row">
               <div class="col-12 col-md-5">
                 <label class="sr-only" for="inlineFormInputPhone">Телефон</label>
-                <input type="tel" class="form-control mb-2 mr-sm-2" id="inlineFormInputPhone" name="phone" placeholder="Телефон" required="true">
+                <input type="tel" class="form-control mr-sm-2" id="inlineFormInputPhone" name="phone" placeholder="Телефон" required="true">
               </div>
               <div class="col-12 col-md-5">
-                <button type="submit" class="btn mb-2 offer_free_button_submit" data-title="Заказать звонок">Получить бесплатную проверку</button>
+                <button type="submit" class="btn offer_free_button_submit" data-title="Заказать звонок">Получить бесплатную проверку</button>
               </div>
             </div>
             <div class="row">
@@ -99,7 +99,7 @@
                   </div>
                 </div>
                 <div class="col-12">
-                  <ul>
+                  <ul class="advantages-list">
                     <li>Подбираем автомобильно <b>по Вашим параметрам</b>;</li>
                     <li>Предоставляем подробный <b>онлайн отчет</b>;</li>
                     <li><b>Можем оставить залог</b>, чтобы закрепить за Вами автомобиль.</li>
@@ -124,7 +124,7 @@
                   </div>
                 </div>
                 <div class="col-12">
-                  <p>Гарантия юридической чистоты. Проверка по закрытым базам на <b>ограничение регистрационных действий, угон, залог, дтп, оригинальность пробега, соответствие документам</b> и пр.</p>
+                  <p class="advantages-text">Гарантия юридической чистоты. Проверка по закрытым базам на <b>ограничение регистрационных действий, угон, залог, дтп, оригинальность пробега, соответствие документам</b> и пр.</p>
                 </div>
               </div>
             </div>
@@ -145,7 +145,7 @@
                   </div>
                 </div>
                 <div class="col-12">
-                  <p>Полная техническая диагностика. Проверка сертифицированным оборудованием более, чем по 100 параметрам с гарантией 60 дней на двигатель и трансмиссию.</p>
+                  <p class="advantages-text">Полная техническая диагностика. Проверка сертифицированным оборудованием более, чем по 100 параметрам с гарантией 60 дней на двигатель и трансмиссию.</p>
                 </div>
               </div>
             </div>
@@ -173,8 +173,8 @@
       <div class="row text-center">
         <div class="col-12 col-md-4">
           <div class="card small-card d-block text-center">
-            <img class="my-4" src="img/one_checkup.svg" alt="Card image cap" width="100">
             <div class="card-body">
+              <img class="my-4" src="img/one_checkup.svg" alt="Card image cap" width="100">
               <h5 class="card-title">Разовая выездная<br>проверка экспертом</h5>
               <p class="card-text">Входит полная проверка юридической чистоты и техническая диагностика выбранного Вами автомобиля</p>
               <p class="price">2 000 руб.</p>
@@ -182,9 +182,10 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-4">
-          <div class="card d-block text-center">
-            <img class="d-inline-block my-4" src="img/total.svg" alt="Card image cap" width="100">
+        <div class="col-12 col-md-4 bg-navy">
+          <div class="card big-cart d-block text-center">
+            <img class="d-none d-sm-inline-block my-4" src="img/total.svg" alt="Card image cap" width="100">
+            <img class="d-inline-block d-sm-none my-4" src="img/white_hand.svg" alt="Card image cap" width="100">
             <div class="card-body">
               <h5 class="card-title">Комплексный подбор авто<br>по Вашим параметрам<br>с гарантией 60 дней</h5>
               <p class="card-text">Будем искать, пока не найдем<br>"тот самый автомобиль".</p>
@@ -285,7 +286,7 @@
               </div>
 
               <div class="col-md-2 mb-3">
-                <button type="submit" class="btn mb-2" data-title="Проверить автомобиль по ссылке">Получить бесплатную проверку</button>
+                <button type="submit" class="btn mb-2 offer_free_check_button_submit" data-title="Проверить автомобиль по ссылке">Получить бесплатную проверку</button>
               </div>
 
             </div><!-- form-row -->
@@ -294,7 +295,7 @@
               <div class="col-12 text-center">
                 <div class="form-check mb-2 ml-sm-2 mt-2">
                   <input class="form-check-input" type="checkbox" id="inlineFormCheckBottom" required="true">
-                  <label class="form-check-label-privacy" for="inlineFormCheckBottom">Даю согласие на обработку персональных данных в соответствии с <a href="privacy.html" class="privacy-check-link">"Политикой конфиденциальности"</a></label>
+                  <label class="form-check-label-privacy text-left" for="inlineFormCheckBottom">Даю согласие на обработку персональных данных в соответствии с <a href="privacy.html" class="privacy-check-link">"Политикой конфиденциальности"</a></label>
                 </div>
               </div>
             </div>
@@ -334,7 +335,7 @@
     <div class="container">
       <div class="row no-gutters">
         <div class="col-12 col-md-3">
-          <ul class="social-icons">
+          <ul class="social-icons text-center text-sm-left">
             <li><a class="vk" href="" target="_blank" rel="nofollow"></a></li>
             <li><a class="youtube" href="" target="_blank" rel="nofollow"></a></li>
             <li><a class="fb" href="" target="_blank" rel="nofollow"></a></li>
@@ -342,9 +343,9 @@
           </ul>
         </div>
         <div class="col-12 col-md-6 text-center">
-          <img src="img/logo.svg">
+          <img class="logo" src="img/logo.svg">
         </div>
-        <div class="col-12 col-md-3 text-right">
+        <div class="col-12 col-md-3 text-center text-sm-right">
           <a class="phone" rel="nofollow" href="tel:<?=return_numbers_from_string($phone);?>"><?=$phone?></a>
           <address>Ленинградский проспект, д.8, стр.1</address>
           <time>Мы работаем с 9:00 до 20:00</time>
@@ -352,7 +353,7 @@
       </div>
       <div class="row">
         <div class="col-12">
-          <p>&copy; 2018 - ООО "Кар Фаинд"</p>
+          <p class="text-center text-sm-left copyright">&copy; 2018 - ООО "Кар Фаинд"</p>
         </div>
       </div>
     </div>

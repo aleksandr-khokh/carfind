@@ -30,6 +30,8 @@ body
   padding-top: 28px
   padding-bottom: 70px
   color: white
+  @media(max-width: 576px)
+    padding-bottom: 30px
 
   .logo
     width: 100%
@@ -49,6 +51,8 @@ body
     margin-top: 70px
     @media(max-width: 576px)
       font-size: 36px
+      margin-top: 35px
+      line-height: 1.1
 
   .header-desc
     margin-top: 28px
@@ -56,15 +60,17 @@ body
     font-size: 24px
     @media(max-width: 576px)
       font-size: 20px
+      margin-top: 15px
 
   .offer-free
     margin-top: 28px
+    margin-bottom: 0
     font-weight: bold
     font-size: 24px
     line-height: 1
-    margin-bottom: 0
     @media(max-width: 576px)
       font-size: 20px
+
       margin-bottom: 20px
 
   .offer
@@ -82,13 +88,20 @@ body
     font-weight: lighter
     font-size: 12px
 
+  #inlineFormInputPhone
+    margin-bottom: 2em
+    @media(max-width: 576px)
+      margin-bottom: 20px
+
   &-car
     margin-top: 130px
 
   .offer_free_button_submit
+    margin-bottom: 2em
     @media(max-width: 576px)
       padding: 7px 20px
       width: 100%
+      margin-bottom: 20px
 
 .privacy-check-link
   color: white
@@ -107,15 +120,28 @@ body
   @media(max-width: 576px)
     background: white
     padding-top: 0
+    padding-bottom: 0
 
   .header-wrapper
     height: auto
     width: 100%
     @media(max-width: 576px)
-      height: 200px
+      height: 191px
       color: white
       &.time
-        background: url(img/find.jpg) no-repeat
+        background: url(img/find_m.jpg) no-repeat
+        -webkit-background-size: contain
+        background-size: contain
+
+      &.legal
+        height: 200px
+        background: url(img/security_m.jpg) no-repeat
+        -webkit-background-size: contain
+        background-size: contain
+
+      &.check
+        height: 200px
+        background: url(img/checkup_m.jpg) no-repeat
         -webkit-background-size: contain
         background-size: contain
 
@@ -132,6 +158,8 @@ body
     background: white
     color: $navy
     margin-bottom: 50px
+    @media(max-width: 576px)
+      margin-bottom: 10px
 
     .advantages-desc
       padding: 50px
@@ -145,10 +173,26 @@ body
     &:last-child
       margin-bottom: 0
 
+    .advantages-list
+      @media(max-width: 576px)
+        margin-top: 15px
+        margin-left: 15px
+        padding-right: 15px
+      li
+        @media(max-width: 576px)
+          margin-bottom: 20px
+
+    .advantages-text
+      @media(max-width: 576px)
+        padding: 20px
+
 #products
   background: $light-grey
-  padding-bottom: 70px
   padding-top: 70px
+  padding-bottom: 70px
+  @media(max-width: 576px)
+    padding-top: 0px
+    padding-bottom: 20px
 
   .card
     margin: auto
@@ -169,6 +213,21 @@ body
       font-weight: bold
       font-size: 22px
       margin-bottom: 20px
+
+
+    &.big-cart
+      @media(max-width: 576px)
+        box-shadow: none
+        color: white
+        background: none
+
+      .card-title
+        @media(max-width: 576px)
+          color: white
+
+      .price
+        @media(max-width: 576px)
+          color: white
 
     .card-text
       font-weight: 300
@@ -237,9 +296,20 @@ body
     font-size: 36px
     margin-bottom: 40px
 
+  .offer_free_check_button_submit
+    @media(max-width: 576px)
+      padding: 7px 20px
+      width: 100%
+      margin-bottom: 20px
+
 #address-map
   height: 400px
-  
+  @media(max-width: 576px)
+    height: 300px
+  #map
+    @media(max-width: 576px)
+      display: none
+
   h4
     color: $navy
     font-size: 36px
@@ -271,24 +341,26 @@ body
     padding: 40px
     background: white
     box-shadow: 0 0 5px rgba(0,0,0,0.15)
+    @media(max-width: 576px)
+      box-shadow: none
+      padding: 40px 0
+      background: none
 
   .container-for-map
     position: relative
     z-index: 10
     top: -350px
+    @media(max-width: 576px)
+      top: 0
 
 footer
   padding-top: 50px
   color: white
-  
-  .phone
-    color: white
-
-  address
-    margin-bottom: 0
 
   .social-icons
     list-style: none
+    @media(max-width: 576px)
+      margin-bottom: 30px
     
     li
       display: inline-block
@@ -314,6 +386,36 @@ footer
       background-position: -120px 0
       &:hover
         background-position: -120px -33px
+
+  .logo
+    margin-bottom: 30px
+
+  .phone
+    color: white
+    font-weight: 300
+    @media(max-width: 576px)
+      font-size: 14px
+
+
+  address
+    margin-bottom: 0
+    font-weight: 300
+    @media(max-width: 576px)
+      font-size: 14px
+
+  time
+    font-weight: 300
+    @media(max-width: 576px)
+      margin-bottom: 30px
+      display: block
+      font-size: 14px
+
+
+  .copyright
+    font-weight: 300
+    @media(max-width: 576px)
+      font-size: 14px
+
 
 // modal form
 .modal
