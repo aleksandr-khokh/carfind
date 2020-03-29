@@ -15,7 +15,7 @@
 <body>
   <?php
   // Добавить здесь телефон, чтобы он обновился везде на странице
-  $phone = "+7 (495) 123-45-67";
+  $phone = "+7 905 593-44-33";
 
   // Используется для телефона, чтобы оставить только цифры в номере
   function return_numbers_from_string( $string ){
@@ -26,19 +26,19 @@
   <section class="first-screen">
     <div class="container">
       <div class="row no-gutters">
-        <div class="col-8 col-xl-3">
+        <div class="col-8 col-md-3">
           <img class="logo" src="img/logo.svg" alt="CarFind подбор автомобилей">
         </div>
-        <div class="col-4 d-sm-none text-right">
+        <div class="col-4 d-md-none text-right">
           <a href="tel:<?=return_numbers_from_string($phone);?>" target="_blank" rel="nofollow">
             <img src="img/phone.svg" alt="Телефон">
           </a>
         </div>
-        <div class="d-none d-md-block col-xl-4"></div>
-        <div class="d-none d-md-block col-xl-3">
+        <div class="d-none d-md-block col-md-2 col-lg-3 col-xl-4"></div>
+        <div class="d-none d-md-block col-md-3">
           <button type="button" class="btn text-uppercase btn-white-inverse" data-toggle="modal" data-target="#callBack" data-title="Заказать звонок">Заказать звонок</button>
         </div>
-        <div class="d-none d-md-block col-xl-2 text-right">
+        <div class="d-none d-md-block col-md-4 col-lg-3 col-xl-2 text-right">
           <a class="phone" href="tel:<?=return_numbers_from_string($phone);?>"><?=$phone?></a>
           <br>
           <time>Работаем с 9:00 до 20:00</time>
@@ -47,7 +47,7 @@
       <div class="row no-gutters">
         <div class="col-12 col-md-6">
           <h1 class="text-center text-sm-left">Подберем автомобиль<br>по вашим параметрам</h1>
-          <p class="header-desc text-center text-sm-left">с гарантией 60 дней</p>
+          <p class="header-desc text-center text-sm-left">Профессионально и с гарантией</p>
           <p class="offer-free">Одна проверка бесплатно!</p>
           <p class="offer">Оставьте телефон, чтобы получить проверку</p>
 
@@ -61,14 +61,14 @@
                 <button type="submit" class="btn offer_free_button_submit" data-title="Заказать звонок">Получить бесплатную проверку</button>
               </div>
             </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="form-check mb-2 ml-sm-2 mt-2">
-                  <input class="form-check-input" type="checkbox" id="inlineFormCheck" required="true">
-                  <label class="form-check-label-privacy" for="inlineFormCheck">Даю согласие на обработку персональных данных в соответствии с <a data-fancybox data-type="iframe" data-src="privacy.html" href="javascript:;" class="privacy-check-link">"Политикой конфиденциальности"</a></label>
-                </div>
-              </div>
-            </div>
+<!--            <div class="row">-->
+<!--              <div class="col-12">-->
+<!--                <div class="form-check mb-2 ml-sm-2 mt-2">-->
+<!--                  <input class="form-check-input" type="checkbox" id="inlineFormCheck" required="true">-->
+<!--                  <label class="form-check-label-privacy" for="inlineFormCheck">Даю согласие на обработку персональных данных в соответствии с <a data-fancybox data-type="iframe" data-src="privacy.html" href="javascript:;" class="privacy-check-link">"Политикой конфиденциальности"</a></label>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
             <input type="hidden" name="hidden" value="1z2s3w">
           </form>
 
@@ -102,7 +102,7 @@
                   <ul class="advantages-list">
                     <li>Подбираем автомобильно <b>по Вашим параметрам</b>;</li>
                     <li>Предоставляем подробный <b>онлайн отчет</b>;</li>
-                    <li><b>Можем оставить залог</b>, чтобы закрепить за Вами автомобиль.</li>
+                    <li>Проведем обоснованный торг и при необходимости <b>забронируем для Вас автомобиль</b></li>
                   </ul>
                 </div>
               </div>
@@ -145,7 +145,7 @@
                   </div>
                 </div>
                 <div class="col-12">
-                  <p class="advantages-text">Полная техническая диагностика. Проверка сертифицированным оборудованием более, чем по 100 параметрам с гарантией 60 дней на двигатель и трансмиссию.</p>
+                  <p class="advantages-text">Полная техническая диагностика. Проверка специализированным оборудованием более, чем по 100 параметрам с гарантией на основные узлы и агрегаты.</p>
                 </div>
               </div>
             </div>
@@ -177,17 +177,17 @@
               <img class="my-4" src="img/one_checkup.svg" alt="Card image cap" width="100">
               <h5 class="card-title">Разовая выездная<br>проверка экспертом</h5>
               <p class="card-text">Входит полная проверка юридической чистоты и техническая диагностика выбранного Вами автомобиля</p>
-              <p class="price">2 000 руб.</p>
+              <p class="price">2 500 руб.</p>
               <button type="button" class="btn text-uppercase" data-toggle="modal" data-target="#callBack" data-title="Вызвать эксперта" data-order="1">Вызвать эксперта</button>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-4 bg-navy">
+        <div class="col-12 col-md-4 bg-navy-mobile">
           <div class="card big-cart d-block text-center">
             <img class="d-none d-sm-inline-block my-4" src="img/total.svg" alt="Card image cap" width="100">
             <img class="d-inline-block d-sm-none my-4" src="img/white_hand.svg" alt="Card image cap" width="100">
             <div class="card-body">
-              <h5 class="card-title">Комплексный подбор авто<br>по Вашим параметрам<br>с гарантией 60 дней</h5>
+              <h5 class="card-title">Комплексный подбор авто<br>по Вашим параметрам<br>с гарантией</h5>
               <p class="card-text">Будем искать, пока не найдем<br>"тот самый автомобиль".</p>
               <p class="price">от 15 000 руб.</p>
               <p class="card-text">Независимо от количества<br>предложенных вариантов</p>
@@ -201,7 +201,7 @@
             <div class="card-body">
               <h5 class="card-title">Эксперт на день</h5>
               <p class="card-text">Передвижение на автомобиле эксперта. Возможно личное присутствие клиента при проверках и торге.</p>
-              <p class="price">5 000 руб.</p>
+              <p class="price">6 500 руб.</p>
               <button type="button" class="btn text-uppercase" data-toggle="modal" data-target="#callBack" data-title="Вызвать эксперта" data-order="3">Вызвать эксперта</button>
             </div>
           </div>
@@ -291,14 +291,14 @@
 
             </div><!-- form-row -->
 
-            <div class="row">
+            <!-- div class="row">
               <div class="col-12 text-center">
                 <div class="form-check mb-2 ml-sm-2 mt-2">
                   <input class="form-check-input" type="checkbox" id="inlineFormCheckBottom" required="true">
                   <label class="form-check-label-privacy text-left" for="inlineFormCheckBottom">Даю согласие на обработку персональных данных в соответствии с <a href="privacy.html" class="privacy-check-link">"Политикой конфиденциальности"</a></label>
                 </div>
               </div>
-            </div>
+            </div -->
             <input type="hidden" name="hidden" value="1z2s3w">
           </form>
 
@@ -382,14 +382,14 @@
               <input type="tel" class="form-control" id="modalFormInputPhone" name="phone" placeholder="+7 (123) 456-78-91" required="true">
             </div>
 
-            <div class="form-group">
+            <!-- div class="form-group">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck" required="true">
                 <label class="form-check-label" for="gridCheck">
                   Принимаю <a href="privacy.html" class="privacy-check-link modal-check" target="_blank">политику конфиденциальности</a>
                 </label>
               </div>
-            </div>
+            </div -->
 
           </div>
           <div class="modal-footer">
